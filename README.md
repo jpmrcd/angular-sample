@@ -1,5 +1,3 @@
-[![CircleCI](https://circleci.com/gh/jpmrcd/angular-sample.svg?style=shield)](https://circleci.com/gh/jpmrcd/angular-sample)
-
 # Angular sample
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-next.5.
