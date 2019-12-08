@@ -22,7 +22,7 @@ jobs:
         npm run lint
         npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
         npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
-        npm run build -- --prod --progress=false --base-href "https://jpmrcd.github.io/angular-sample"
+        npm run build -- --prod --progress=false --base-href "/angular-sample/"
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
