@@ -23,12 +23,12 @@ jobs:
         npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
         npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
         npm run build -- --prod --progress=false --base-href "/angular-sample/"
-    - name: Deploy
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: dist/angular-sample
-        SCRIPT_MODE: true
-      run: |
-        wget https://raw.githubusercontent.com/peaceiris/actions-gh-pages/v2/entrypoint.sh
-        bash ./entrypoint.sh
+#    - name: Deploy
+#      env:
+#        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+#        PUBLISH_BRANCH: gh-pages
+#        PUBLISH_DIR: dist/angular-sample
+#        SCRIPT_MODE: true
+#      run: |
+#        wget https://raw.githubusercontent.com/peaceiris/actions-gh-pages/v2/entrypoint.sh
+#        bash ./entrypoint.sh
